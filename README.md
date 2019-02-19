@@ -2,6 +2,19 @@
 
 > My rad Nuxt.js project
 
+## add to package.json
+
+```json
+{
+    "scripts": {
+        "copy": "cpx .nuxt/**/* .functions/functions/ &&  cpx .nuxt/dist/client/**/* .functions/hosting/static/ &&  cpx static/**/* .functions/hosting/"
+    },
+    "devDependencies": {
+        "cpx": "^1.5.0"
+    }
+}
+```
+
 ## Build Setup
 
 ``` bash

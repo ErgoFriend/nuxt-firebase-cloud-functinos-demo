@@ -8,13 +8,9 @@
     "nuxt": "^2.4.0"
   },
   "scripts": {
-    "clean": "rimraf ./functions/* && rimraf ./hosting/*",
-    "copy": "cpx ../.nuxt/ ./functions &&  cpx ../.nuxt/dist/client/ ./hosting/static &&  cpx ../static/ ./hosting",
     "deploy": "firebase login && firebase use --add && firebase deploy"
   },
   "devDependencies": {
-    "rimraf": "^2.6.3",
-    "cpx": "^1.5.0"
   },
   "engines": {
     "node": "8"
